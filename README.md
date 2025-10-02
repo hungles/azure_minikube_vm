@@ -11,13 +11,10 @@ Este proyecto permite crear una máquina virtual en Azure con Minikube instalado
 ## Estructura del proyecto
 
 ```
-azure-infra/
-└── terraform/
-    └── minkube_vm/
-        ├── main.tf
-        ├── variables.tf
-        ├── outputs.tf
-        └── README.md
+minkube_vm/
+├── main.tf
+├── variables.tf
+└── README.md
 ```
 
 ## Pasos para desplegar
@@ -25,7 +22,6 @@ azure-infra/
 1. **Clona el repositorio**
    ```bash
    git clone <url-del-repositorio>
-   cd azure-infra/terraform/minkube_vm
    ```
 
 2. **Autentícate en Azure**
@@ -43,11 +39,6 @@ azure-infra/
 5. **Aplica la infraestructura**
    ```bash
    terraform apply
-   ```
-
-6. **Obtén la IP pública de la VM**
-   ```bash
-   terraform output
    ```
 
 ## ¿Qué se crea?
